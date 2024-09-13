@@ -7,7 +7,7 @@
 
     packages.x86_64-linux.byedpi = with nixpkgs.legacyPackages.x86_64-linux;
       stdenv.mkDerivation rec {
-        name = "byedpi";
+        name = "ciadpi";
         version = "0.13.1";
         src = fetchFromGitHub {
           owner = "hufrea";
