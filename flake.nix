@@ -8,12 +8,12 @@
     packages.x86_64-linux.byedpi = with nixpkgs.legacyPackages.x86_64-linux;
       stdenv.mkDerivation rec {
         name = "ciadpi";
-        version = "0.13.1";
+        version = "0.14.1";
         src = fetchFromGitHub {
           owner = "hufrea";
           repo = "byedpi";
           rev = "v${version}";
-          sha256 = "sha256-Sf5Ik8+9nKhum4/faGf44Y/gQggldyRsFUVmd9XPKOA=";
+          sha256 = "sha256-JdL+3ETNxaEtOLUhgLSABL9C8w/EM4Ay37OXU5jLCFA=";
         };
         buildInputs = [ gcc gnumake ];
         buildPhase = ''
